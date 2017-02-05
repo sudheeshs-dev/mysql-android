@@ -1,0 +1,72 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     tools:context=".MainActivity"
+
+        >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Name"
+        android:id="@+id/name"
+        android:layout_marginTop="150dp"
+
+      ><requestFocus /></EditText>
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/pass"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/name"
+        android:hint="Password"
+        />
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mail"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pass"
+        android:hint="Password"
+        />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/reg"
+        android:layout_below="@+id/mail"
+        android:layout_marginTop="20dp"
+        android:text="Register"
+        />
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/log"
+        android:text="Login"
+        android:layout_alignTop="@+id/reg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forget"
+        android:text="dd"
+        android:layout_below="@+id/reg"
+        android:layout_toRightOf="@+id/reg"
+        android:layout_toEndOf="@+id/reg"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp" />
+    
+    
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
